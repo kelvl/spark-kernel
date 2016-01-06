@@ -144,13 +144,18 @@ object Common {
     ExclusionRule(
       organization = "org.jboss.netty",
       name = "netty"
+    ),
+    ExclusionRule(
+      organization = "com.google.guava",
+      name = "guava"
     )
     ),
     "org.apache.spark" %% "spark-streaming" % sparkVersion % "provided",
     "org.apache.spark" %% "spark-sql" % sparkVersion % "provided",
     "org.apache.spark" %% "spark-mllib" % sparkVersion % "provided",
     "org.apache.spark" %% "spark-graphx" % sparkVersion % "provided",
-    "org.apache.spark" %% "spark-repl" % sparkVersion  % "provided"
+    "org.apache.spark" %% "spark-repl" % sparkVersion  % "provided",
+    "com.google.guava" % "guava" % "16.0.1" % "provided"
   )
 
   // ==========================================================================
